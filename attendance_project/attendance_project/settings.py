@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-p4qrdf(^8-=-z&uucqs_scu1smaoqu_x&#6wpe8=%1c_z)mle$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -63,23 +63,23 @@ WSGI_APPLICATION = 'attendance_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'URL': 'postgresql://postgres:UHSNKlecKdxRvUYzxxEAOGbFNGVAQeiL@postgres.railway.internal:5432/railway',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'UHSNKlecKdxRvUYzxxEAOGbFNGVAQeiL',
-        'HOST': 'postgres.railway.internal',
-        'PORT': 5432,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'URL': 'postgresql://postgres:UHSNKlecKdxRvUYzxxEAOGbFNGVAQeiL@postgres.railway.internal:5432/railway',
+#         'NAME': 'railway',
+#         'USER': 'postgres',
+#         'PASSWORD': 'UHSNKlecKdxRvUYzxxEAOGbFNGVAQeiL',
+#         'HOST': 'postgres.railway.internal',
+#         'PORT': 5432,
+#     }
+# }
 AUTH_USER_MODEL = 'auth.User'
 
 # Password validation
